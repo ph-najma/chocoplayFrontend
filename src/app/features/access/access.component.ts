@@ -24,7 +24,6 @@ type ValidateResponse = {
 export class AccessComponent {
   private readonly http = inject(HttpClient);
   private readonly apiBaseUrl = environment.apiBaseUrl;
-  private readonly apiOrigin = new URL(this.apiBaseUrl).origin;
 
   readonly form = new FormGroup({
     code: new FormControl('', {
@@ -63,7 +62,7 @@ export class AccessComponent {
           this.statusMessage = response.message;
 
           if (response.ok) {
-            const redirectTarget = response.redirectTo ?? '/index.html';
+            const redirectTarget = response.redirectTo ?? '/landing';
             const finalRedirectUrl = this.resolveRedirectUrl(redirectTarget);
             setTimeout(() => {
               window.location.href = finalRedirectUrl;
@@ -81,11 +80,21 @@ export class AccessComponent {
   }
 
   private resolveRedirectUrl(redirectTarget: string): string {
-    if (/^https?:\/\//i.test(redirectTarget)) {
-      return redirectTarget;
+    const target = redirectTarget.trim();
+
+    if (/^https?:\/\//i.test(target)) {
+      return target;
     }
 
-    // Relative paths should open from backend origin where static pages are served.
-    return `${this.apiOrigin}${redirectTarget.startsWith('/') ? '' : '/'}${redirectTarget}`;
+    // Backward compatibility with old static file redirects.
+    if (target === '/landingPage.html' || target === 'landingPage.html') {
+      return `${window.location.origin}/landing`;
+    }
+    if (target === '/index.html' || target === 'index.html') {
+      return `${window.location.origin}/home`;
+    }
+
+    // Relative paths should stay on the frontend origin.
+    return `${window.location.origin}${target.startsWith('/') ? '' : '/'}${target}`;
   }
 }

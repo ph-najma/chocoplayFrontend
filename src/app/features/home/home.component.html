@@ -1,0 +1,506 @@
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-logo">ChocoPlay</div>
+      <div class="loader-chocs">
+        <div class="loader-choc"></div>
+        <div class="loader-choc"></div>
+        <div class="loader-choc"></div>
+        <div class="loader-choc"></div>
+      </div>
+      <div class="loader-tagline">Preparing your sweet experience…</div>
+    </div>
+
+    <!-- BG -->
+    <div class="bg-texture"></div>
+    <div id="particles"></div>
+
+    <!-- Floating cocoa beans -->
+    <div
+      class="cocoa-float"
+      style="
+        left: 5%;
+        animation-duration: 18s;
+        animation-delay: -4s;
+        font-size: 1.5rem;
+      "
+    >
+      🍫
+    </div>
+    <div
+      class="cocoa-float"
+      style="
+        left: 88%;
+        animation-duration: 22s;
+        animation-delay: -9s;
+        font-size: 1rem;
+      "
+    >
+      🍫
+    </div>
+    <div
+      class="cocoa-float"
+      style="
+        left: 30%;
+        animation-duration: 26s;
+        animation-delay: -15s;
+        font-size: 0.8rem;
+      "
+    >
+      ✦
+    </div>
+    <div
+      class="cocoa-float"
+      style="
+        left: 65%;
+        animation-duration: 20s;
+        animation-delay: -2s;
+        font-size: 1.2rem;
+      "
+    >
+      🍫
+    </div>
+    <div
+      class="cocoa-float"
+      style="
+        left: 50%;
+        animation-duration: 30s;
+        animation-delay: -12s;
+        font-size: 0.7rem;
+      "
+    >
+      ✦
+    </div>
+
+    <!-- PROMO BANNER -->
+    <aside class="promo-banner" aria-label="Season announcements">
+      <div class="promo-track" aria-hidden="true">
+        <!-- repeated for seamless loop -->
+        <div class="promo-item">
+          <span class="promo-dot"></span> New Season: Dark Mint Rivalry Edition
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> Challenge a friend & win the chocolate
+          crown 🏆
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> 6 exclusive chocolate flavors to
+          unlock
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> Free Play — No Registration Needed
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> ChocoPlay Classic Tic Tac Toe — Est.
+          2025
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> New Season: Dark Mint Rivalry Edition
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> Challenge a friend & win the chocolate
+          crown 🏆
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> 6 exclusive chocolate flavors to
+          unlock
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> Free Play — No Registration Needed
+        </div>
+        <div class="promo-item">
+          <span class="promo-dot"></span> ChocoPlay Classic Tic Tac Toe — Est.
+          2025
+        </div>
+      </div>
+    </aside>
+
+    <!-- NAV -->
+    <header>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#" class="brand-logo">
+          <div class="logo-badge">
+            <span class="logo-badge-icon" aria-hidden="true">🍫</span>
+          </div>
+          <div class="logo-wordmark">
+            <span class="logo-name">Choco<em>Play</em></span>
+            <span class="logo-tagline-small">The Sweetest Game in Town</span>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          type="button"
+        >
+          ☰
+        </button>
+        <div class="nav-menu" id="navMenu" hidden>
+          <div class="nav-pills">
+            <button class="nav-pill active" type="button">Play</button>
+            <button class="nav-pill" type="button">Flavors</button>
+            <button class="nav-pill" type="button">Rewards</button>
+            <button class="nav-pill" type="button">About</button>
+          </div>
+          <div class="nav-actions">
+            <button
+              class="nav-btn-sound"
+              id="soundBtn"
+              title="Toggle sound"
+              type="button"
+              aria-pressed="true"
+            >
+              🔊
+            </button>
+            <button
+              class="nav-btn-theme"
+              id="themeBtn"
+              title="Switch to light theme"
+              type="button"
+              aria-pressed="false"
+            >
+              🌙
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="badge-star">✦</span>
+            Season 3 — Rivalry Edition is Live
+          </div>
+          <h1 class="hero-headline" id="heroTitle">
+            The<br />
+            <span class="hl-choco">Sweetest</span>
+            <span class="hl-italic">game ever played</span>
+          </h1>
+          <p class="hero-desc">
+            Two players. Nine squares. One chocolate crown. Challenge your rival
+            in the most indulgent Tic Tac Toe experience ever crafted.
+          </p>
+          <div class="hero-ctas">
+            <a href="#game" class="btn-cta-primary">▶ &nbsp;Play Now</a>
+            <a href="#flavors" class="btn-cta-ghost">🍫 Explore Flavors</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">12K+</div>
+              <div class="stat-label">Games Played</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">6</div>
+              <div class="stat-label">Choco Flavors</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Sweet Moments</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="choco-box">
+            <div class="box-header">
+              <div>
+                <div class="box-brand">Choco<em>Play</em></div>
+                <div class="box-since">Est. 2025 · Artisan Edition</div>
+              </div>
+              <span style="font-size: 1.4rem" aria-hidden="true">🏆</span>
+            </div>
+            <div class="choco-grid-preview" id="flavors">
+              <div class="choco-square cs-dark"><span>✕</span></div>
+              <div class="choco-square cs-milk"></div>
+              <div class="choco-square cs-ruby"><span>○</span></div>
+              <div class="choco-square cs-gold"></div>
+              <div class="choco-square cs-white"><span>✕</span></div>
+              <div class="choco-square cs-mint"></div>
+              <div class="choco-square cs-milk"><span>○</span></div>
+              <div class="choco-square cs-dark"></div>
+              <div class="choco-square cs-gold"><span>✕</span></div>
+            </div>
+            <div class="box-footer">
+              <div class="box-flavor">Nine squares of pure delight</div>
+              <div class="box-badge-mini">Premium</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLAVOR STRIP -->
+      <div class="flavor-strip">
+        <div class="flavor-pills">
+          <div class="flavor-pill">
+            <span
+              class="fp-dot"
+              style="
+                background: #2e1200;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+              "
+            ></span
+            >Dark Noir
+          </div>
+          <div class="flavor-pill">
+            <span class="fp-dot" style="background: #7b3f18"></span>Milk Classic
+          </div>
+          <div class="flavor-pill">
+            <span
+              class="fp-dot"
+              style="background: #dfc49a; border: 1px solid rgba(0, 0, 0, 0.15)"
+            ></span
+            >White Dream
+          </div>
+          <div class="flavor-pill">
+            <span class="fp-dot" style="background: #9b1b30"></span>Ruby Berry
+          </div>
+          <div class="flavor-pill">
+            <span class="fp-dot" style="background: #b5820a"></span>Gold Caramel
+          </div>
+          <div class="flavor-pill">
+            <span class="fp-dot" style="background: #2d7a5f"></span>Mint Frost
+          </div>
+          <div class="flavor-pill">
+            <span class="fp-dot" style="background: #5a2d00"></span>Hazelnut
+          </div>
+          <div class="flavor-pill">
+            <span class="fp-dot" style="background: #c85a2a"></span>Orange Zest
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME SECTION -->
+      <section class="game-section" id="game" aria-labelledby="gameTitle">
+        <h2
+          id="gameTitle"
+          style="
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+          "
+        >
+          ChocoPlay game board
+        </h2>
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+          <div class="score-card" id="scoreCardX">
+            <div class="score-player-lbl">
+              <span class="p-sym x">✕</span> Player 1
+            </div>
+            <div class="score-num" id="scoreX">00</div>
+            <div class="score-sub">wins</div>
+          </div>
+          <div class="score-mid">
+            <div class="score-draws-num" id="scoreDraws">00</div>
+            <div class="score-draws-lbl">Draws</div>
+            <div class="score-divider-line"></div>
+          </div>
+          <div class="score-card" id="scoreCardO">
+            <div class="score-player-lbl">
+              <span class="p-sym o">○</span> Player 2
+            </div>
+            <div class="score-num" id="scoreO">00</div>
+            <div class="score-sub">wins</div>
+          </div>
+        </div>
+
+        <!-- Turn bar -->
+        <div
+          class="turn-bar x-turn"
+          id="turnBar"
+          role="status"
+          aria-live="polite"
+        >
+          <span class="turn-sym x" id="turnSym" aria-hidden="true">✕</span>
+          <span id="turnText">Player 1's Turn</span>
+        </div>
+
+        <!-- Board -->
+        <div class="board-wrap">
+          <div
+            class="board"
+            id="board"
+            role="grid"
+            aria-label="ChocoPlay Tic Tac Toe board"
+          >
+            <div
+              class="cell"
+              data-index="0"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 1"
+            ></div>
+            <div
+              class="cell"
+              data-index="1"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 2"
+            ></div>
+            <div
+              class="cell"
+              data-index="2"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 3"
+            ></div>
+            <div
+              class="cell"
+              data-index="3"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 4"
+            ></div>
+            <div
+              class="cell"
+              data-index="4"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 5"
+            ></div>
+            <div
+              class="cell"
+              data-index="5"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 6"
+            ></div>
+            <div
+              class="cell"
+              data-index="6"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 7"
+            ></div>
+            <div
+              class="cell"
+              data-index="7"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 8"
+            ></div>
+            <div
+              class="cell"
+              data-index="8"
+              role="gridcell"
+              tabindex="0"
+              aria-label="Cell 9"
+            ></div>
+          </div>
+          <svg
+            class="win-line-svg"
+            id="winLineSvg"
+            viewBox="0 0 3 3"
+            preserveAspectRatio="none"
+          >
+            <line
+              id="winLine"
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="0"
+              stroke-linecap="round"
+              stroke-dasharray="6"
+              stroke-dashoffset="6"
+            />
+          </svg>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-row">
+          <button
+            class="btn-restart"
+            id="btnRestart"
+            aria-label="New round"
+            type="button"
+          >
+            <span class="btn-icon">↺</span> New Round
+          </button>
+          <button
+            class="btn-reset"
+            id="btnReset"
+            aria-label="Reset scores"
+            type="button"
+          >
+            Reset All Scores
+          </button>
+        </div>
+      </section>
+
+      <!-- WINNER OVERLAY -->
+      <div
+        class="winner-overlay"
+        id="winnerOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="wLabel"
+        aria-describedby="wSub"
+      >
+        <div class="winner-card">
+          <div class="winner-card-bg"></div>
+          <div class="winner-emoji" id="wEmoji">🏆</div>
+          <div class="winner-label" id="wLabel">Player 1 Wins!</div>
+          <div class="winner-sym" id="wSym">✕</div>
+          <p class="winner-sub" id="wSub">The chocolate crown is yours!</p>
+          <div class="winner-btns">
+            <button class="w-btn-primary" id="btnPlayAgain" type="button">
+              ▶ &nbsp;Play Again
+            </button>
+            <button class="w-btn-ghost" id="btnViewScore" type="button">
+              View Scores
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA CARDS -->
+      <section class="cta-section">
+        <div class="cta-card">
+          <span class="cta-icon">🍫</span>
+          <div class="cta-card-title">Chocolate Flavors</div>
+          <p class="cta-card-desc">
+            Six handcrafted flavor themes — from bitter dark noir to sweet white
+            dream. Each one a unique game experience.
+          </p>
+          <a href="#flavors" class="cta-card-link">Explore flavors →</a>
+        </div>
+        <div class="cta-card">
+          <span class="cta-icon">🏆</span>
+          <div class="cta-card-title">Win the Crown</div>
+          <p class="cta-card-desc">
+            Claim the ultimate chocolate crown by defeating your rival three
+            rounds in a row. The sweetest victory awaits.
+          </p>
+          <a href="#game" class="cta-card-link">Start playing →</a>
+        </div>
+        <div class="cta-card">
+          <span class="cta-icon">🎁</span>
+          <div class="cta-card-title">Season Rewards</div>
+          <p class="cta-card-desc">
+            Season 3 brings exclusive Rivalry Edition badges, golden boards, and
+            the legendary Dark Mint trophy.
+          </p>
+          <a href="#" class="cta-card-link">View rewards →</a>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-brand">ChocoPlay</div>
+        <div class="footer-copy">
+          © 2025 ChocoPlay · The Sweetest Game in Town · All rights reserved
+        </div>
+      </footer>
+    </main>
+
+    
