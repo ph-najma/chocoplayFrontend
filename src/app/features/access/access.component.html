@@ -1,0 +1,31 @@
+<main class="access-page">
+  <section class="access-card" aria-labelledby="access-title">
+    <p class="badge">Chocolate Access</p>
+    <h1 id="access-title">Enter Your Access Code</h1>
+    <p class="hint">
+      Scan your wrapper QR code and submit the unique code printed on your pack.
+    </p>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+      <label for="code">Access Code</label>
+      <input
+        id="code"
+        formControlName="code"
+        type="text"
+        autocomplete="one-time-code"
+        placeholder="CHOCO-12345"
+      />
+      @if (form.controls.code.touched && form.controls.code.invalid) {
+        <p class="error-text">Use format like CHOCO-12345.</p>
+      }
+
+      <button type="submit" [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Validating...' : 'Unlock Game' }}
+      </button>
+    </form>
+
+    @if (statusMessage) {
+      <p class="status" [class.error]="isError">{{ statusMessage }}</p>
+    }
+  </section>
+</main>
